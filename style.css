@@ -1,0 +1,68 @@
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: #202B2D;
+    height: 100%;
+    width: 20%;
+}
+
+.text{
+    font-size: 40px;
+}
+
+input[type="color"]{
+    width: 70%;
+    height: 5%;
+    box-shadow: 5px 5px 15px;
+    cursor: pointer;
+    border: none;   
+}
+
+input[type="number"]{
+    width: 40%;
+    height: 4%;
+    font-size: 20px;
+    box-shadow: 5px 5px 15px;
+    cursor: pointer;
+}
+input[type="number"]:focus{
+    outline: none;
+}
+
+.clearBtn{
+    border-radius: 10px;
+    width: 25%;
+    height: 4%;
+    transition: transform .3s;
+    cursor: pointer;
+    color: #202B2D;
+}
+.clearBtn:hover{
+    transform: scale(1.1);
+}
+.clearBtn:active{
+    transform: scale(0.95);
+}
+
+.rightSide{
+    height: 100%;
+    width: 80%;
+}
+
